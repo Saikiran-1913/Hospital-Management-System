@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | MediCare</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+
+        <div class="auth-info">
+
+            <div class="auth-logo">🏥 MediCare</div>
+
+            <h1>
+                Welcome Back
+            </h1>
+
+            <p>
+                Access your hospital management dashboard
+                and manage healthcare services efficiently.
+            </p>
+
+            <div class="role-info">
+                <span>Admin</span>
+                <span>Doctor</span>
+                <span>Patient</span>
+            </div>
+
+        </div>
+
+
+        <div class="auth-card">
+
+            <h2>Login</h2>
+
+            <p class="auth-subtitle">
+                Enter your details to continue
+            </p>
+
+            <form id="loginForm">
+
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+                <label for="role">Login As</label>
+
+                <select id="role" required>
+
+                    <option value="">Select Role</option>
+
+                    <option value="admin">
+                        Admin
+                    </option>
+
+                    <option value="doctor">
+                        Doctor
+                    </option>
+
+                    <option value="patient">
+                        Patient
+                    </option>
+
+                </select>
+
+
+                <button type="submit" class="auth-button">
+                    Login
+                </button>
+
+            </form>
+
+
+            <p class="auth-switch">
+
+                Don't have an account?
+
+                <a href="signup.html">
+                    Sign Up
+                </a>
+
+            </p>
+
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
