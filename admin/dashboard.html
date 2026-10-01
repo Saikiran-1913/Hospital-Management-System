@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | MediCare</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Top Navigation -->
+    <nav class="dashboard-nav">
+
+        <div class="dashboard-logo">
+            🏥 MediCare
+        </div>
+
+        <div class="dashboard-user">
+            <span>Admin</span>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </nav>
+
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Admin Panel</h3>
+
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="#">
+                Patients
+            </a>
+
+            <a href="#">
+                Doctors
+            </a>
+
+            <a href="#">
+                Appointments
+            </a>
+
+            <a href="#">
+                Billing
+            </a>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+
+            <div class="dashboard-heading">
+
+                <div>
+                    <p class="small-heading">ADMIN MODULE</p>
+
+                    <h1>Dashboard</h1>
+
+                    <p>
+                        Overview of hospital operations.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">👥</span>
+
+                    <div>
+                        <p>Total Patients</p>
+                        <h2>125</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">👨‍⚕️</span>
+
+                    <div>
+                        <p>Total Doctors</p>
+                        <h2>18</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">📅</span>
+
+                    <div>
+                        <p>Appointments</p>
+                        <h2>32</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">💳</span>
+
+                    <div>
+                        <p>Total Revenue</p>
+                        <h2>₹1.25L</h2>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Recent Appointments -->
+            <section class="dashboard-section">
+
+                <div class="section-title-row">
+
+                    <div>
+                        <h2>Recent Appointments</h2>
+
+                        <p>
+                            Latest scheduled consultations
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Patient</th>
+                                <th>Doctor</th>
+                                <th>Department</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Rahul Sharma</td>
+                                <td>Dr. Kumar</td>
+                                <td>Cardiology</td>
+                                <td>10 Oct 2026</td>
+                                <td>
+                                    <span class="status confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Anjali Rao</td>
+                                <td>Dr. Mehta</td>
+                                <td>Neurology</td>
+                                <td>10 Oct 2026</td>
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Kiran Kumar</td>
+                                <td>Dr. Singh</td>
+                                <td>Orthopedics</td>
+                                <td>11 Oct 2026</td>
+                                <td>
+                                    <span class="status confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- Quick Actions -->
+            <section class="dashboard-section">
+
+                <h2>Quick Actions</h2>
+
+                <div class="quick-actions">
+
+                    <button onclick="showAdminMessage('Patients')">
+                        Manage Patients
+                    </button>
+
+                    <button onclick="showAdminMessage('Doctors')">
+                        Manage Doctors
+                    </button>
+
+                    <button onclick="showAdminMessage('Appointments')">
+                        Manage Appointments
+                    </button>
+
+                    <button onclick="showAdminMessage('Billing')">
+                        Manage Billing
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="../js/admin.js"></script>
+
+</body>
+
+</html>
